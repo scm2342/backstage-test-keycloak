@@ -13,29 +13,4 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: keycloak-team
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: keycloak-group
-  description: The keycloak team
-spec:
-  type: team
-  profile:
-    displayName: Awesome Keycloak Team
-    email: foo@bar.de
-    picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Aankomst_%27_The_A-Team%27_op_Circuit_Zandvoort%2C_tv-serie_1984_-_15.jpg/280px-Aankomst_%27_The_A-Team%27_op_Circuit_Zandvoort%2C_tv-serie_1984_-_15.jpg"
-  children: []
-  members: [johndoe]
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: johndoe
-spec:
-  profile:
-    displayName: Jenny Doe
-    email: jenny-doe@example.com
-    picture: https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png
-  memberOf: [keycloak-group]
+  owner: guests
